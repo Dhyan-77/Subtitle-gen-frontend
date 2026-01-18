@@ -23,7 +23,7 @@ export default function StudioPage() {
     formData.append("file", file);
 
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL}/generate`, {
+      const res = await fetch("https://subtitle-gen-backend-2.onrender.com/generate", {
         method: "POST",
         body: formData,
       });
